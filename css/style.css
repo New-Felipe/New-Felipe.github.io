@@ -1,0 +1,137 @@
+
+/* Configurações gerais */
+:root {
+    --bg-primary: #0b0f19;
+    --bg-secondary: #151c2c;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --accent: #3b82f6;
+    --accent-hover: #2563eb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--bg-secondary);
+    border-bottom: 1px solid #293449;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 24px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+nav > a {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--text-primary);
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    list-style: none;
+}
+
+nav ul a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul a:hover {
+    color: var(--accent);
+}
+
+/* Apresentação principal */
+#inicio {
+    min-height: 80vh;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#inicio h1 {
+    font-size: clamp(32px, 5vw, 56px);
+    margin-bottom: 12px;
+}
+
+#inicio h2 {
+    font-size: clamp(20px, 3vw, 28px);
+    color: var(--accent);
+    margin-bottom: 24px;
+}
+
+#inicio p {
+    max-width: 650px;
+    font-size: 18px;
+    color: var(--text-secondary);
+    margin-bottom: 32px;
+}
+
+/* Botão principal */
+#inicio > a {
+    display: inline-block;
+    padding: 14px 28px;
+
+    background-color: var(--accent);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+#inicio > a:hover {
+    background-color: var(--accent-hover);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 16px;
+    }
+
+    #inicio {
+        padding: 70px 24px;
+    }
+
+    #inicio p {
+        font-size: 16px;
+    }
+}
