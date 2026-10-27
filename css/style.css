@@ -1,4 +1,3 @@
-
 /* Configurações gerais */
 :root {
     --bg-primary: #0b0f19;
@@ -206,5 +205,86 @@ nav ul a:hover {
 
     .sobre-texto p {
         font-size: 16px;
+    }
+}
+
+
+/* Seção Tecnologias & Ferramentas */
+#tecnologias {
+    background-color: var(--bg-primary);
+    padding: 80px 24px;
+}
+
+.container-tecnologias {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-tecnologias > h2 {
+    font-size: clamp(28px, 4vw, 36px);
+    margin-bottom: 12px;
+}
+
+.container-tecnologias > p {
+    color: var(--text-secondary);
+    margin-bottom: 32px;
+    font-size: 17px;
+}
+
+/* Grade de tecnologias */
+.tecnologias-grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(100%, 250px), 1fr)
+    );
+    gap: 24px;
+}
+
+/* Cartões */
+.tecnologia-grupo {
+    background-color: var(--bg-secondary);
+    border: 1px solid #293449;
+    border-radius: 12px;
+    padding: 28px;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.tecnologia-grupo:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+}
+
+.tecnologia-grupo h3 {
+    font-size: 20px;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+/* Lista de tecnologias */
+.tecnologia-grupo ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tecnologia-grupo li {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    border: 1px solid #293449;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #tecnologias {
+        padding: 60px 20px;
+    }
+
+    .tecnologia-grupo {
+        padding: 24px;
     }
 }
