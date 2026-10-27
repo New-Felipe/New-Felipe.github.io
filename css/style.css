@@ -135,3 +135,76 @@ nav ul a:hover {
         font-size: 16px;
     }
 }
+
+
+/* Seção Sobre Mim */
+#sobre {
+    background-color: var(--bg-primary);
+    padding: 80px 24px;
+}
+
+.container-sobre {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-sobre > h2 {
+    font-size: clamp(28px, 4vw, 36px);
+    margin-bottom: 32px;
+    padding-bottom: 12px;
+    position: relative;
+}
+
+.container-sobre > h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: var(--accent);
+    border-radius: 4px;
+}
+
+.sobre-conteudo {
+    background-color: var(--bg-secondary);
+    border: 1px solid #293449;
+    border-radius: 12px;
+    padding: 40px;
+}
+
+.sobre-texto h3 {
+    color: var(--text-primary);
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.sobre-texto p {
+    color: var(--text-secondary);
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.sobre-texto p:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsividade da seção Sobre Mim */
+@media (max-width: 768px) {
+    #sobre {
+        padding: 60px 20px;
+    }
+
+    .sobre-conteudo {
+        padding: 24px;
+    }
+
+    .sobre-texto h3 {
+        font-size: 21px;
+    }
+
+    .sobre-texto p {
+        font-size: 16px;
+    }
+}
