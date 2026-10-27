@@ -288,3 +288,62 @@ nav ul a:hover {
         padding: 24px;
     }
 }
+
+
+/* Alinhamento dos ícones das tecnologias */
+.tecnologia-grupo li {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Tamanho e apresentação dos ícones */
+.tecnologia-grupo li i {
+    font-size: 24px;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+
+/* Contraste do ícone Express.js no tema escuro */
+.devicon-express-original {
+    color: var(--text-primary);
+}
+
+
+.tecnologia-simbolo {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--accent);
+    line-height: 1;
+}
+
+
+.tecnologia-simbolo {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3b82f6;
+    line-height: 1;
+}
+
+
+/* Contraste do ícone GitHub no tema escuro */
+.devicon-github-original {
+    color: var(--text-primary);
+}
+
+
+/* Ícones SVG das tecnologias */
+.tecnologia-icone {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+
+/* Contraste do ícone Apache Kafka no tema escuro */
+.devicon-apachekafka-original {
+    color: var(--text-primary);
+}
