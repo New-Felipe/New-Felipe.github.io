@@ -347,3 +347,130 @@ nav ul a:hover {
 .devicon-apachekafka-original {
     color: var(--text-primary);
 }
+
+
+/* Seção Projetos */
+#projetos {
+    background-color: var(--bg-primary);
+    padding: 80px 24px;
+}
+
+.container-projetos {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-projetos > h2 {
+    font-size: clamp(28px, 4vw, 36px);
+    margin-bottom: 12px;
+}
+
+.container-projetos > p {
+    color: var(--text-secondary);
+    font-size: 17px;
+    margin-bottom: 32px;
+}
+
+/* Grade de projetos */
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(100%, 320px), 1fr)
+    );
+    gap: 24px;
+}
+
+/* Cartões de projetos */
+.projeto-card {
+    background-color: var(--bg-secondary);
+    border: 1px solid #293449;
+    border-radius: 12px;
+    padding: 28px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.projeto-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+}
+
+/* Cabeçalho e status */
+.projeto-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.projeto-cabecalho h3 {
+    font-size: 22px;
+}
+
+.projeto-status {
+    background-color: #163b2e;
+    color: #86efac;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Descrição */
+.projeto-card > p {
+    color: var(--text-secondary);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* Tecnologias de cada projeto */
+.projeto-tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+}
+
+.projeto-tecnologias li {
+    background-color: var(--bg-primary);
+    border: 1px solid #293449;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 12px;
+}
+
+/* Link para o GitHub */
+.projeto-link {
+    color: var(--accent);
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: auto;
+}
+
+.projeto-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #projetos {
+        padding: 60px 20px;
+    }
+
+    .projeto-card {
+        padding: 24px;
+    }
+}
+
+
+/* Status dos projetos em desenvolvimento */
+.status-desenvolvimento {
+    background-color: #422006;
+    color: #fbbf24;
+}
