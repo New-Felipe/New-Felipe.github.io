@@ -28,10 +28,21 @@ async function buscarRepositorio(nomeRepositorio) {
     }
 }
 
-buscarRepositorio("task-manager-api").then((repositorio) => {
-    const elemento = document.getElementById(
-        "task-manager-atualizacao"
-    );
+atualizarDataProjeto(
+    "task-manager-api",
+    "task-manager-atualizacao"
+);
+
+
+atualizarDataProjeto(
+    "trabalho_final_web",
+    "monte-pc-atualizacao"
+);
+
+
+async function atualizarDataProjeto(nomeRepositorio, idElemento) {
+    const repositorio = await buscarRepositorio(nomeRepositorio);
+    const elemento = document.getElementById(idElemento);
 
     if (!repositorio || !elemento || !repositorio.pushed_at) {
         return;
@@ -41,5 +52,4 @@ buscarRepositorio("task-manager-api").then((repositorio) => {
 
     elemento.textContent =
         `Última atualização: ${data.toLocaleDateString("pt-BR")}`;
-});
-
+}
