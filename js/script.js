@@ -33,12 +33,15 @@ atualizarDataProjeto(
     "task-manager-atualizacao"
 );
 
-
 atualizarDataProjeto(
     "trabalho_final_web",
     "monte-pc-atualizacao"
 );
 
+atualizarDataProjeto(
+    "enade-bigdata",
+    "enade-atualizacao"
+);
 
 async function atualizarDataProjeto(nomeRepositorio, idElemento) {
     const repositorio = await buscarRepositorio(nomeRepositorio);
