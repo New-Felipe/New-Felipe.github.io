@@ -43,6 +43,11 @@ atualizarDataProjeto(
     "enade-atualizacao"
 );
 
+atualizarDataProjeto(
+    "App",
+    "app-atualizacao"
+);
+
 async function atualizarDataProjeto(nomeRepositorio, idElemento) {
     const repositorio = await buscarRepositorio(nomeRepositorio);
     const elemento = document.getElementById(idElemento);
