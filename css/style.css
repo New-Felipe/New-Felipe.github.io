@@ -743,3 +743,35 @@ nav ul a:hover {
         justify-self: center;
     }
 }
+
+
+/* Links da seção Contato */
+#contato .contato-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 14px 22px;
+    margin: 8px 8px 8px 0;
+
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    border-radius: 10px;
+
+    font-weight: 500;
+    text-decoration: none;
+
+    transition: border-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+#contato .contato-link:hover {
+    border-color: var(--accent);
+    transform: translateY(-3px);
+}
+
+#contato .contato-link i {
+    font-size: 24px;
+    color: var(--accent);
+}
