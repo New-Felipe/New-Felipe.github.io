@@ -474,3 +474,102 @@ nav ul a:hover {
     background-color: #422006;
     color: #fbbf24;
 }
+
+
+/* Seção Contribuições & Colaborações */
+#colaboracoes {
+    background-color: var(--bg-primary);
+    padding: 80px 24px;
+}
+
+.container-colaboracoes {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-colaboracoes > h2 {
+    font-size: clamp(28px, 4vw, 36px);
+    margin-bottom: 12px;
+}
+
+.container-colaboracoes > p {
+    color: var(--text-secondary);
+    font-size: 17px;
+    margin-bottom: 32px;
+}
+
+/* Grade de colaborações */
+.colaboracoes-grid {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(100%, 320px), 1fr)
+    );
+    gap: 24px;
+}
+
+/* Cartões de colaboração */
+.colaboracao-card {
+    background-color: var(--bg-secondary);
+    border: 1px solid #293449;
+    border-radius: 12px;
+    padding: 28px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.colaboracao-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+}
+
+.colaboracao-card h3 {
+    font-size: 22px;
+    color: var(--text-primary);
+}
+
+.colaboracao-card h4 {
+    font-size: 16px;
+    color: var(--accent);
+}
+
+.colaboracao-card p,
+.colaboracao-card li {
+    color: var(--text-secondary);
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+.colaboracao-card ul {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Link para as contribuições */
+.colaboracao-link {
+    color: var(--accent);
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: auto;
+}
+
+.colaboracao-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #colaboracoes {
+        padding: 60px 20px;
+    }
+
+    .colaboracao-card {
+        padding: 24px;
+    }
+}
