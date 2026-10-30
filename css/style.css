@@ -573,3 +573,92 @@ nav ul a:hover {
         padding: 24px;
     }
 }
+
+
+/* Seção Contato */
+#contato {
+    background-color: var(--bg-primary);
+    padding: 80px 24px;
+}
+
+.container-contato {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-contato > h2 {
+    font-size: clamp(28px, 4vw, 36px);
+    margin-bottom: 12px;
+}
+
+.container-contato > p {
+    color: var(--text-secondary);
+    font-size: 17px;
+    margin-bottom: 32px;
+}
+
+/* Grade dos contatos */
+.contato-links {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(100%, 280px), 1fr)
+    );
+    gap: 24px;
+}
+
+/* Cartões de contato */
+.contato-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    padding: 24px;
+    background-color: var(--bg-secondary);
+    border: 1px solid #293449;
+    border-radius: 12px;
+
+    color: var(--text-primary);
+    text-decoration: none;
+
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.contato-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+}
+
+.contato-card > i {
+    font-size: 36px;
+    color: var(--text-primary);
+    flex-shrink: 0;
+}
+
+.contato-card h3 {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.contato-card span {
+    color: var(--text-secondary);
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+/* Acessibilidade */
+.contato-card:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #contato {
+        padding: 60px 20px;
+    }
+
+    .contato-card {
+        padding: 20px;
+    }
+}
