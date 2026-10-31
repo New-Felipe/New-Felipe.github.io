@@ -775,3 +775,17 @@ nav ul a:hover {
     font-size: 24px;
     color: var(--accent);
 }
+
+/* Logotipo do cabeçalho */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icone {
+    display: block;
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+}
