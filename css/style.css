@@ -1,10 +1,10 @@
 /* Configurações gerais */
 :root {
-    --bg-primary: #0b0f19;
-    --bg-secondary: #151c2c;
+    --bg-primary: #111318;
+    --bg-secondary: #20242c;
     --text-primary: #f8fafc;
     --text-secondary: #94a3b8;
-    --accent: #3b82f6;
+    --accent: #2563eb;
     --accent-hover: #2563eb;
 }
 
